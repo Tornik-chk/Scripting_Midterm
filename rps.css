@@ -4,26 +4,56 @@ body {
   background-color: #d7d7d7;
   color: #333;
   margin: 0;
-  padding: 20px;
+  padding: 2vh;
+}
+
+#h2_rps {
+  color: #050a4b;
+}
+
+#h4_rtt {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .choices {
-  margin: 20px 0;
+  margin: 10px;
 }
 
 .scoreboard {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 450px;
-  margin-right: 450px;
+  justify-content: space-evenly;
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 .winning-sign {
   display: flex;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 2.5vw;
   color: #a03732;
+}
+
+.vs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 40vw;
+  padding-right: 40vw;
+}
+
+#h6_cym {
+  color: #353535;
+  margin-top: 0;
+  margin-block-end: 1.5em;
 }
 
 .choice-btn {
