@@ -1,0 +1,49 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-color: #d7d7d7;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.choices {
+  margin: 20px 0;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+.winning-sign {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  color: #a03732;
+}
+
+.choice-btn {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#reset-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.history {
+  text-align: left;
+  margin-top: 20px;
+}
