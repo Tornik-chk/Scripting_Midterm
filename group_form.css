@@ -1,0 +1,121 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff8f5;
+    color: #1a1a1a;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-top: 1.3cm;
+    margin-bottom: 1.3cm;
+    letter-spacing: 1px;
+  }
+
+  .firstandlastname {
+    display: flex;
+  }
+
+  .fn{
+    text-align: left;
+  }
+
+  .ln{
+    text-align: left;
+  }
+
+  .firstname{
+    width: 5cm;
+    margin-right: 0.5cm;
+  }
+
+  .lastname{
+    width: 5cm;
+    margin-left: 0.5cm;
+  }
+  .inputbox{
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 0.2cm;
+  }
+  input:hover{
+    border-color: blue;
+  }
+  .email {
+  width: 10.3cm;
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 0.2cm;
+
+  }
+  .password{
+    width: 10.3cm; 
+    border-radius: 5px;
+    height: 30px;
+  }
+  button {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1cm;
+  }
+
+  .teamsize{
+    width: 5cm;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 0.5cm;
+  }
+
+  .technologies{
+    display: flex;
+    width: 10cm;
+  }
+
+  .left{
+    text-align: left;
+    width: 5cm;
+  }
+
+  .right{
+    text-align: left;
+    width: 5cm;
+  }
+  .errormessage{
+    color: rgb(177, 14, 14);
+    font-size: small;
+    margin-top: 1px;
+    margin-bottom: 0.2cm;
+  }
+p{
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-size: small;
+}
+
+label{
+  font-size: small;
+}
+div{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+input::placeholder{
+  padding: 10px;
+  font-size: small;
+}
+button{
+  font-size:x-small;
+  padding: 15px;
+}
+
+button:hover{
+  background-color: rgb(55, 55, 55);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group Form</title>
+  <link rel="stylesheet" href="group_form.css">
+</head>
+<body>
+  <form id="groupform" class="">
+    <h1>Group Form</h1>
+
+    <div class="firstandlastname">
+      <div class="firstname">
+      <p class="firstnametext">First name</p>
+      <input type="text" placeholder="First name" name="firstName" required class="inputbox">
+      </div>
+      <div class="lastname">
+      <p class="lastnametext">Last name</p>
+      <input type="text" placeholder="Last name" name="lastName"  required class="inputbox">
+      </div>
+    </div>
+      <p>Email</p>
+        <input type="email" placeholder="you@company.com" name="email" required class="email" >
+      <div>
+        <P>Password</P>
+        <input type="password" placeholder="Password" name="password" id="password" required class="password">
+        <p class="errormessage" id="passworderror">password must be at least 8 characters long</p>
+      </div>
+    <p>team size</p>
+    <select name="teamsize" required class="teamsize">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    
+    <div>
+     <p>Technologies</p>
+        <div class="technologies">
+          <div class="left">
+            <input type="checkbox" name="Html" value="Html">
+            <label for="student">Html</label>
+            <br>
+            <input type="checkbox" name="Css" value="Css">
+            <label for="staff">Css</label>
+            <br>
+            <input type="checkbox" name="Javascript" value="Javascript">
+            <label  for="student assistant">Javascript</label>
+          </div>
+          <div class="right">
+            <input type="checkbox" name="ReactJS" value="ReactJS">
+            <label  for="teaching assistant">ReactJS</label>
+            <br>
+            <input type="checkbox" name="Figma" value="Figma">
+            <label for="teaching assistant">Figma</label>
+            <br>
+            <input type="checkbox" name="Github" value="Github">
+            <label for="teaching assistant"> Github</label>
+          </div>
+        </div>
+      <p class="errormessage">Choose at least 3 services</p>
+    </div>
+    <button type="submit">Submit</button>
+
+
+  </form>
+</body>
+</html>
