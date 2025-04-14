@@ -79,6 +79,7 @@ function playGame(player, computer) {
 
 function gameTied() {
   game.roundEnd = "🤝 It's a Draw!";
+  resultTxt.textContent = "IT'S A DRAW 🤝";
 }
 function gameLost() {
   game.computerScore += 1;
@@ -106,7 +107,8 @@ function ResetGame() {
 
   playerDiv.textContent = `PLAYER SCORE: 0`;
   computerDiv.textContent = `COMPUTER SCORE: 0`;
-  playerimg.src = "";
-  computerimg.src = "";
+  playerimg.src = "Images/Rock.png";
+  computerimg.src = "Images/Rock.png";
+  resultTxt.textContent = "";
   historyUL.innerHTML = "";
 }
