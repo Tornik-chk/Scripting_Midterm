@@ -41,10 +41,11 @@ body {
 .currentgame {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 55%;
+  justify-content: center;
+  width: 100%;
   font-size: 20px;
   font-weight: 700;
+  gap: 50px;
 }
 .buttons {
   display: flex;
@@ -59,7 +60,7 @@ body {
   color: white;
   font-size: 25px;
   font-weight: 700;
-  width: 170px;
+  width: 28%;
   height: 70px;
   box-sizing: border-box;
   cursor: pointer;
@@ -77,4 +78,6 @@ li {
 }
 img {
   min-height: 100px;
+  width: 100px;
+  object-fit: contain;
 }
