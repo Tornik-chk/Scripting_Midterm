@@ -1,67 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Group Form</title>
-  <link rel="stylesheet" href="group_form.css">
-</head>
-<body>
-  <form id="groupform" class="">
-    <h1>Group Form</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Group Form</title>
+    <link rel="stylesheet" href="group_form.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <form id="groupform" class="">
+      <h1>Group Form</h1>
 
-    <div class="firstandlastname">
-      <div class="firstname">
-      <p class="firstnametext">First name</p>
-      <input type="text" placeholder="First name" name="firstName" required class="inputbox">
+      <div class="firstandlastname">
+        <div class="input-control firstname">
+          <p class="firstnametext">First name</p>
+          <input
+            id="Firstname"
+            type="text"
+            placeholder="First name"
+            name="firstName"
+            class="inputbox"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control lastname">
+          <p class="lastnametext">Last name</p>
+          <input
+            id="Lastname"
+            type="text"
+            placeholder="Last name"
+            name="lastName"
+            class="inputbox"
+          />
+          <div class="error"></div>
+        </div>
       </div>
-      <div class="lastname">
-      <p class="lastnametext">Last name</p>
-      <input type="text" placeholder="Last name" name="lastName"  required class="inputbox">
+
+      <div class="input-control">
+        <p>Email</p>
+        <input
+          id="email"
+          type="text"
+          placeholder="you@company.com"
+          name="email"
+          class="email"
+        />
+        <div class="error"></div>
       </div>
-    </div>
-      <p>Email</p>
-        <input type="email" placeholder="you@company.com" name="email" required class="email" >
-      <div>
-        <P>Password</P>
-        <input type="password" placeholder="Password" name="password" id="password" required class="password">
-        <p class="errormessage" id="passworderror">password must be at least 8 characters long</p>
+      <div class="input-control">
+        <p>Password</p>
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          name="password"
+          class="password"
+        />
+        <div class="error"></div>
       </div>
-    <p>team size</p>
-    <select name="teamsize" required class="teamsize">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-    
-    <div>
-     <p>Technologies</p>
+      <p>team size</p>
+      <select name="teamsize" required class="teamsize">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <div class="input-control">
+        <p>Technologies</p>
         <div class="technologies">
           <div class="left">
-            <input type="checkbox" name="Html" value="Html">
-            <label for="student">Html</label>
-            <br>
-            <input type="checkbox" name="Css" value="Css">
-            <label for="staff">Css</label>
-            <br>
-            <input type="checkbox" name="Javascript" value="Javascript">
-            <label  for="student assistant">Javascript</label>
+            <input type="checkbox" id="Html" name="Html" value="Html" />
+            <label for="Html">Html</label><br />
+            <input type="checkbox" id="Css" name="Css" value="Css" />
+            <label for="Css">Css</label><br />
+            <input
+              type="checkbox"
+              id="Javascript"
+              name="Javascript"
+              value="Javascript"
+            />
+            <label for="Javascript">Javascript</label>
           </div>
           <div class="right">
-            <input type="checkbox" name="ReactJS" value="ReactJS">
-            <label  for="teaching assistant">ReactJS</label>
-            <br>
-            <input type="checkbox" name="Figma" value="Figma">
-            <label for="teaching assistant">Figma</label>
-            <br>
-            <input type="checkbox" name="Github" value="Github">
-            <label for="teaching assistant"> Github</label>
+            <input
+              type="checkbox"
+              id="ReactJS"
+              name="ReactJS"
+              value="ReactJS"
+            />
+            <label for="ReactJS">ReactJS</label><br />
+            <input type="checkbox" id="Figma" name="Figma" value="Figma" />
+            <label for="Figma">Figma</label><br />
+            <input type="checkbox" id="Github" name="Github" value="Github" />
+            <label for="Github">Github</label>
           </div>
         </div>
-      <p class="errormessage">Choose at least 3 services</p>
-    </div>
-    <button type="submit">Submit</button>
-
-
-  </form>
-</body>
+        <div class="error"></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
