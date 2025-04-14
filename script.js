@@ -89,7 +89,7 @@ const validateInput = () => {
 
   const checkedTechs = Array.from(techCheckboxes).filter((cb) => cb.checked);
   if (checkedTechs.length < 3) {
-    techError.innerHTML = `<img src="images/Error.png" alt="!" style="height: 14px; vertical-align: middle; margin-right: 6px;" />
+    techError.innerHTML = `<img src="Images/Error.png" alt="!" style="height: 14px; vertical-align: middle; margin-right: 6px;text-allign:center" />
     Choose at least 3 technologies`;
     isValid = false;
   } else {
@@ -109,7 +109,7 @@ function displayGame() {
 function LinkGameCSS() {
   links.forEach((link) => {
     if (link.href.includes("group_form.css")) {
-      link.remove(); // or: link.parentNode.removeChild(link);
+      link.remove();
     }
   });
   const link = document.createElement("link");

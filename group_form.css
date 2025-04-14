@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff8f5;
   color: #1a1a1a;
   padding: 15px;
@@ -30,29 +30,27 @@ h1 {
   padding-bottom: 1%;
 }
 .firstname p {
-    font-weight: bold;
-  }
-  
-.lastname p {
-    font-weight: bold;
-  }
-  
-.firstname .inputbox {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;  
-    padding-top: 5%;
-    padding-bottom: 4%;
+  font-weight: bold;
 }
-  
+
+.lastname p {
+  font-weight: bold;
+}
+
+.firstname .inputbox {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 15px 10px 15px 20px;
+}
+
 .lastname .inputbox {
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;  
-  padding-top: 5%;
-  padding-bottom: 4%;
-  }
-  
+  font-size: 1rem;
+  padding: 15px 10px 15px 20px;
+}
+
 .firstname,
 .lastname {
   flex: 1;
@@ -66,7 +64,7 @@ h1 {
 
 .inputbox,
 .email,
-.password{
+.password {
   width: 100%;
   padding-top: 2.5%;
   padding-bottom: 2%;
@@ -76,27 +74,39 @@ h1 {
   font-size: 1rem;
   margin-top: 2px;
   transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 .input-control p {
-    font-weight: bold;
-  }
+  font-weight: bold;
+}
 
 .teamsize {
-    width: 50%;
-    padding: 2.5% 1.5%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 0.6rem;
-    margin-top: 4px;
-    margin-bottom: 6%;
-    transition: border-color 0.2s ease-in-out;
-  }
-  
-.teamsizetext{
-    font-weight: bold;
+  width: 40%;
+  padding: 2.5% 3%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 6%;
+  transition: border-color 0.2s ease-in-out;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: white;
+
+  background-image: url("Images/Arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 1.2em center;
+  background-size: 1em;
 }
-label{
-    font-weight: bold;
+
+.teamsizetext {
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
 }
 input:hover,
 input:focus,
@@ -136,9 +146,10 @@ button:hover {
 }
 
 .input-control .error {
-  color: #ff3860;
+  color: #cc777b;
   font-size: 12px;
   margin-top: 4px;
+  font-weight: 500;
 }
 
 .input-control.success input {
@@ -146,7 +157,8 @@ button:hover {
 }
 
 .input-control.error input {
-  border: 1px solid #ff3860;
+  border: 1px solid #eaccc9;
+  box-shadow: 2px 2px 5.1px #ebcdca;
 }
 
 label,
@@ -158,4 +170,7 @@ p {
 input::placeholder {
   color: #888;
   font-size: 0.9rem;
+}
+.error {
+  display: flex;
 }
