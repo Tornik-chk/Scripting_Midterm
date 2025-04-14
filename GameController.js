@@ -68,8 +68,8 @@ function playGame(player, computer) {
         console.log("invalid input");
     }
   }
-  playerimg.src = `Images/${game.playerChoose}.png`;
-  computerimg.src = `Images/${game.computerChoose}.png`;
+  playerimg.src = `./Images/${game.playerChoose}.png`;
+  computerimg.src = `./Images/${game.computerChoose}.png`;
   addToHistroy();
   playerDiv.textContent = `PLAYER SCORE: ${game.playerScore}`;
   computerDiv.textContent = `COMPUTER SCORE: ${game.computerScore}`;
