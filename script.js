@@ -9,7 +9,6 @@ const techContainer = document.querySelector(".technologies").parentElement;
 const techError = techContainer.querySelector(".error");
 const links = document.querySelectorAll('link[rel="stylesheet"]');
 const gameDiv = document.querySelector(".game");
-displayGame();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
