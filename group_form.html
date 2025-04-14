@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Group Form</title>
     <link rel="stylesheet" href="group_form.css" />
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="GameController.js" defer></script>
   </head>
   <body>
     <form id="groupform" class="">
@@ -98,5 +99,50 @@
       </div>
       <button type="submit">Submit</button>
     </form>
+    <div class="game" style="display: none">
+      <div style="font-size: 30px; color: #070a52; font-weight: 700">
+        Rock Paper Scissors
+      </div>
+      <div class="reset">RESET THE TOUR</div>
+      <div class="scores">
+        <div id="playerscore">PLAYER SCORE: 0</div>
+        <div id="computerscore">COMPUTER SCORE: 0</div>
+      </div>
+      <div
+        class="resultext"
+        style="font-size: 40px; color: #af2d2d; font-weight: 700"
+      ></div>
+      <div class="currentgame">
+        <img src="" alt="" id="playerimg" />
+        vs
+        <img src="" alt="" id="computerimg" />
+      </div>
+      <div style="font-size: 14px; font-weight: 500">
+        Choose your move, rock paper or scissors?
+      </div>
+      <div class="buttons">
+        <button class="btn" id="rockbtn">ROCK</button>
+        <button class="btn" id="paperbtn">PAPER</button>
+        <button class="btn" id="scissorsbtn">SCISSORS</button>
+      </div>
+      <div
+        style="
+          font-size: 39px;
+          font-weight: 600;
+          color: #247527;
+          margin-top: 30px;
+        "
+      >
+        Game History
+      </div>
+      <ul
+        style="margin-top: 15px; max-height: 200px; overflow-y: auto"
+        id="history"
+      >
+        <!-- <li>
+          Round 2: Player 1 - Paper , Player 2 - Rock -> 🏆 Player 1 Wins!
+        </li> -->
+      </ul>
+    </div>
   </body>
 </html>

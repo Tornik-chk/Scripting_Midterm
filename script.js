@@ -7,6 +7,8 @@ const form = document.getElementById("groupform");
 const techCheckboxes = document.querySelectorAll('input[type="checkbox"]');
 const techContainer = document.querySelector(".technologies").parentElement;
 const techError = techContainer.querySelector(".error");
+const links = document.querySelectorAll('link[rel="stylesheet"]');
+const gameDiv = document.querySelector(".game");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -49,31 +51,38 @@ const validateInput = () => {
   const lastnameVal = lastname.value.trim();
   const emailVal = email.value.trim();
   const passwordVal = password.value.trim();
+  let isValid = true;
 
   if (nameVal === "") {
     setError(firstname, "First name is required");
+    isValid = false;
   } else {
     setSuccess(firstname);
   }
 
   if (lastnameVal === "") {
     setError(lastname, "Last name is required");
+    isValid = false;
   } else {
     setSuccess(lastname);
   }
 
   if (emailVal === "") {
     setError(email, "Email address is required");
+    isValid = false;
   } else if (!isValidEmail(emailVal)) {
     setError(email, "Invalid email format");
+    isValid = false;
   } else {
     setSuccess(email);
   }
 
   if (passwordVal === "") {
     setError(password, "Password is required");
+    isValid = false;
   } else if (passwordVal.length < 8) {
     setError(password, "Password must be at least 8 characters long");
+    isValid = false;
   } else {
     setSuccess(password);
   }
@@ -82,7 +91,29 @@ const validateInput = () => {
   if (checkedTechs.length < 3) {
     techError.innerHTML = `<img src="images/Error.png" alt="!" style="height: 14px; vertical-align: middle; margin-right: 6px;" />
     Choose at least 3 technologies`;
+    isValid = false;
   } else {
     techError.innerText = "";
   }
+  if (isValid) {
+    displayGame();
+  }
 };
+
+function displayGame() {
+  form.style.display = "none";
+  LinkGameCSS();
+  gameDiv.style.display = "flex";
+}
+
+function LinkGameCSS() {
+  links.forEach((link) => {
+    if (link.href.includes("group_form.css")) {
+      link.remove(); // or: link.parentNode.removeChild(link);
+    }
+  });
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "GameCSS.css";
+  document.head.appendChild(link);
+}

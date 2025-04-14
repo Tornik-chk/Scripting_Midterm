@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #d9d9d9;
+}
+.game {
+  width: 32%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.reset {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.reset:hover {
+  color: #da1b1b;
+}
+.scores {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.scores div {
+  font-size: 14px;
+  font-weight: 600;
+}
+.currentgame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn {
+  border-radius: 14px;
+  border: none;
+  background-color: #df2e38;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  width: 170px;
+  height: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(255, 166, 0);
+}
+
+li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+img {
+  height: 100px;
+}
