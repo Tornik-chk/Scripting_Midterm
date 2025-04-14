@@ -80,7 +80,8 @@ const validateInput = () => {
 
   const checkedTechs = Array.from(techCheckboxes).filter((cb) => cb.checked);
   if (checkedTechs.length < 3) {
-    techError.innerText = "Choose at least 3 technologies";
+    techError.innerHTML = `<img src="images/Error.png" alt="!" style="height: 14px; vertical-align: middle; margin-right: 6px;" />
+    Choose at least 3 technologies`;
   } else {
     techError.innerText = "";
   }

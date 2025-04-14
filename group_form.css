@@ -94,6 +94,13 @@ button {
   margin-top: 4px;
 }
 
+.input-control.success input {
+  border: 1px solid #09c372;
+}
+.input-control.error input {
+  border: 1px solid #ff3860;
+}
+
 p {
   margin-top: 2px;
   margin-bottom: 4px;
